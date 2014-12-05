@@ -14,21 +14,10 @@
  * the License.
  */
 
-package com.alignace.gwt.chargeio.client;
+package com.alignace.gwt.chargeio.client.card;
 
-import com.alignace.gwt.chargeio.client.card.CreditCardResponseHandler;
-import com.alignace.gwt.chargeio.client.card.model.CreditCard;
-import com.google.gwt.core.client.Callback;
+import com.alignace.gwt.chargeio.client.card.model.CreditCardResponse;
 
-public interface ChargeIO {
-
-	void inject(Callback<Void, Exception> callback);
-
-	boolean isInjected();
-
-	void setPublicKey(String publicKey);
-
-	void getCreditCardToken(CreditCard creditCard,
-			CreditCardResponseHandler creditCardResponseHandler);
-
+public interface CreditCardResponseHandler {
+	void onCreditCardReceived(int status, CreditCardResponse creditCardResponse);
 }
