@@ -53,7 +53,7 @@ public class CreditCardResponse extends JavaScriptObject {
 		return this.expYear;
 	}-*/;
 
-	public final native int getCvv() /*-{
+	public final native String getCvv() /*-{
 		return this.cvv;
 	}-*/;
 

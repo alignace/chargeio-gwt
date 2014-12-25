@@ -84,8 +84,8 @@ public class ChargeIOImpl implements ChargeIO {
 			postal_code : addressZip,
 			country : addressCountry
 		};
-		var createTokenCallback = function(status, response) {
-			creditCardResponseHandler.@com.alignace.gwt.chargeio.client.card.CreditCardResponseHandler::onCreditCardReceived(ILcom/alignace/gwt/chargeio/client/card/model/CreditCardResponse;)(status, response);
+		var createTokenCallback = function(response) {
+			creditCardResponseHandler.@com.alignace.gwt.chargeio.client.card.CreditCardResponseHandler::onCreditCardReceived(Lcom/alignace/gwt/chargeio/client/card/model/CreditCardResponse;)(response);
 		}
 		$wnd.ChargeIO.create_token(creditCardInfo, createTokenCallback);
 	}-*/;

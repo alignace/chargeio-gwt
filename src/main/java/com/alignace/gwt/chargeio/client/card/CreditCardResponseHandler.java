@@ -19,5 +19,5 @@ package com.alignace.gwt.chargeio.client.card;
 import com.alignace.gwt.chargeio.client.card.model.CreditCardResponse;
 
 public interface CreditCardResponseHandler {
-	void onCreditCardReceived(int status, CreditCardResponse creditCardResponse);
+	void onCreditCardReceived(CreditCardResponse creditCardResponse);
 }
